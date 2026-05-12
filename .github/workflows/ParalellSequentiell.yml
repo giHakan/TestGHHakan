@@ -23,10 +23,10 @@ jobs:
         run: |
           echo "Deploy Phase is working"
 
-    deploy:
+    deployParallel:
     runs-on: ubuntu-latest
     needs: [build, test]
     steps:
-      - name: Deploy Phase
+      - name: DeployParallel Phase
         run: |
           echo "Deploy Phase is working"
