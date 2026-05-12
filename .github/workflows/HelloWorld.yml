@@ -2,11 +2,21 @@ name: HelloWorld #name
 on: workflow_dispatch
 
 jobs:
-  NameOfTheJob:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: NameOfStep
+      - name: Build Step
         run: |
-          echo "Benim ilk Workflow"
-          echo "Merhaba!"
-          echo "Nasilsin?"
+          echo "A Demo build"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Phase
+        run: |
+          echo "Running the Testing"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Phase
+        run: |
+          echo "Deploy Phase is working"
