@@ -1,0 +1,4 @@
+name: ParallelSequentiel
+on: workflow_dispatch
+jobs:
+  
