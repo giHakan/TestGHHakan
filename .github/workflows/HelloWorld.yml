@@ -1,0 +1,9 @@
+name: HelloWorld #name
+on: workflow_dispatch
+
+jobs:
+  NameOfTheJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: NameOfStep
+        run: echo "Benim ilk Workflow"
