@@ -1,4 +1,32 @@
-name: ParallelSequentiel
+name: ParallelSequntiel #name
 on: workflow_dispatch
+
 jobs:
-  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Step
+        run: |
+          echo "A Demo build"
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Test Phase
+        run: |
+          echo "Running the Testing"
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Deploy Phase
+        run: |
+          echo "Deploy Phase is working"
+
+    deploy:
+    runs-on: ubuntu-latest
+    needs: build and test
+    steps:
+      - name: Deploy Phase
+        run: |
+          echo "Deploy Phase is working"
