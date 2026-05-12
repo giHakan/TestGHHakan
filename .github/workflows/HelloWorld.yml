@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: NameOfStep
-        run: echo "Benim ilk Workflow"
-        run: echo "Merhaba!"
-        run: echo "Nasilsin?"
+        run: |
+          echo "Benim ilk Workflow"
+          echo "Merhaba!"
+          echo "Nasilsin?"
