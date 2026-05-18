@@ -15,7 +15,6 @@ jobs:
         run: |
           echo "A Demo build2"
   test:
-    needs: build
     runs-on: ubuntu-latest    
     steps:
       - name: Test Phase
