@@ -8,6 +8,12 @@ jobs:
       - name: Build Step
         run: |
           echo "A Demo build"
+  build2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build2 Step
+        run: |
+          echo "A Demo build2"
   test:
     needs: build
     runs-on: ubuntu-latest    
